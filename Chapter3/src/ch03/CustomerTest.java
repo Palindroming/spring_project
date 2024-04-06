@@ -23,7 +23,7 @@ public class CustomerTest {
 		System.out.println(price);
 		// 인스턴스는 VIPCustomer로 만들어졌으나 type 이 Customer
 		// Customer 내 변수밖에 쓸 수 없다 VIP x 
-		// 자바에서는 항상 인스턴스의 메서가 호출 됨 
+		// 자바에서는 항상 인스턴스의 메서드가 호출 됨 
 		
 	
 		
