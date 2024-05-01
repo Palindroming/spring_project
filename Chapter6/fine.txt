@@ -1,0 +1,10 @@
+5월 01, 2024 4:10:14 오후 ch12.MyLogger log
+FINE: test
+5월 01, 2024 4:10:14 오후 ch12.MyLogger log
+CONFIG: test
+5월 01, 2024 4:10:14 오후 ch12.MyLogger log
+INFO: test
+5월 01, 2024 4:10:14 오후 ch12.MyLogger log
+WARNING: test
+5월 01, 2024 4:10:14 오후 ch12.MyLogger log
+SEVERE: test
