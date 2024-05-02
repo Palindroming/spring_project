@@ -1,34 +1,27 @@
 package ch14;
 
-import java.io.FileInputStream;
-import java.io.IOException;
-
+import java.io.*;
 public class FileOutputStreamTest1 {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		
-		FileInputStream fis =null;
+		FileOutputStream fos = new FileOutputStream("output2.txt", true);
 		
-		try {
+		try(fos){
 			
-			fis = new FileInputStream("input.txt");
-			
-			System.out.println((char)fis.read());
-			System.out.println((char)fis.read());
-			System.out.println((char)fis.read());
-			
-		} catch(IOException e) {
-			System.out.println(e);
-		} finally {
-			try {
-				fis.close();
-			}catch(IOException e) {
-				System.out.println(e);
-			}catch(NullPointerException e) {
-				System.out.println(e);
+			byte[] bs = new byte[26];
+			byte data = 65;
+			for (int i = 0; i<bs.length; i++) {
+				bs[i] = data;
+				data++;
 			}
+			
+			fos.write(bs);
+		}catch(Exception e) {
+			System.out.println(e);
 		}
-		System.out.println("end");
-	}
+		System.out.println("output completed!!");
+		
+	
 
-}
+}}
